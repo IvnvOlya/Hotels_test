@@ -23,7 +23,7 @@ export default function Hotels() {
   };
   useEffect(() => {
     handleNew();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className="Hotels">

@@ -55,6 +55,8 @@ export default function AuthorizationPage() {
       case "password":
         setPasswordDirty(true);
         break;
+      default:
+        console.log(e);
     }
   };
 
