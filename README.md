@@ -1,4 +1,4 @@
-# Онлайн магазин на REACT
+# web приложение для поиска отелей
 
 :tada: [Демо](https://ivnvolya.github.io/Online-Store-React/)
 
