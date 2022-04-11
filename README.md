@@ -1,6 +1,6 @@
 # web приложение для поиска отелей
 
-:tada: [Демо](https://ivnvolya.github.io/Online-Store-React/)
+:tada: [Демо]()
 
 :large_blue_circle: В приложении 2 страницы:
 - Страница авторизации (логин: test@mail.ru; пароль: 12345678)
