@@ -1,0 +1,34 @@
+.Hotels {
+  width: 664px;
+  background: #ffffff;
+  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 52px 32px;
+  margin-left: 24px;
+}
+.Hotels_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Hotels_heading {
+  display: inline;
+}
+.Hotels_arrow {
+  padding: 0 20px;
+}
+.Hotels_date {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #41522e;
+}
+.Hotels_img {
+  padding: 28px 0;
+}
