@@ -22,12 +22,14 @@ const HotelItem = ({ hotels }) => {
     if (t.hasAttribute("data-key")) {
       dispatch(addFavorite(t.getAttribute("data-key")));
     }
-    if (t.classList.contains("active")) {
+    if (!t.classList.contains("active") && t.hasAttribute("data-key")) {
+      t.classList.add("active");
+      dispatch(countFavorite());
+    } else if (t.classList.contains("active") && t.hasAttribute("data-key")) {
       t.classList.remove("active");
       dispatch(countMinus());
     } else {
-      t.classList.add("active");
-      dispatch(countFavorite());
+      return false;
     }
   };
 
@@ -50,12 +52,7 @@ const HotelItem = ({ hotels }) => {
                   <p className="HotelItem_list_item_day">{day} день</p>
                 </div>
                 <div>
-                  <img
-                    // src="img/4stars.png"
-                    alt="Рейтинг отеля"
-                    className="stars"
-                  />{" "}
-                  {stars}
+                  <img alt="Рейтинг отеля" className="stars" /> {stars}
                 </div>
               </div>
             </div>
