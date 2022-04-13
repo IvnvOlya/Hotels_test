@@ -45,7 +45,8 @@ const HotelItem = ({ hotels }) => {
                   <h2 className="HotelItem_list_item_head">{hotelName}</h2>
                 </div>
                 <div className="HotelItem_block_date">
-                  <p className="HotelItem_list_item_date">{dateNow} -</p>
+                  <p className="HotelItem_list_item_date">{dateNow}</p>
+                  <p className="HotelItem_list_item_date_padding">-</p>
                   <p className="HotelItem_list_item_day">{day} день</p>
                 </div>
                 <div>
@@ -58,7 +59,7 @@ const HotelItem = ({ hotels }) => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="HotelItem_block_three">
               <button className="HotelItem_svg">
                 <svg
                   width="23"

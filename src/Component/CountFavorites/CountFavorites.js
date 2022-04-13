@@ -7,9 +7,9 @@ export default function CountFavorites() {
 
   return (
     <div className="CountFavorites">
-      <div className="CountFavorites_heading">
-         Добавлено в избранное: <strong>{countHotels} </strong>отеля(ей)
-      </div>
+      <div className="CountFavorites_heading"> Добавлено в избранное:</div>
+      <div className="CountFavorites_count"><strong>{countHotels} </strong></div>
+      <div>отеля(ей)</div>
       <div></div>
     </div>
   );

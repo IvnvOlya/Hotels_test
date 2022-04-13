@@ -1,4 +1,6 @@
-.CountFavorites_heading {
+.CountFavorites {
+  display: flex;
+  flex-direction: row;
   padding: 28px 0 0 0;
   font-style: normal;
   font-weight: 300;
@@ -6,4 +8,9 @@
   line-height: 22px;
   letter-spacing: -0.408px;
   color: #424242;
+}
+.CountFavorites_count{
+  padding: 0px 4px 0 8px;
+}
+.CountFavorites_heading {
 }

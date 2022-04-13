@@ -1,11 +1,15 @@
 import "./FavoritesHotels.css";
 // import { useSelector } from "react-redux";
 
-export default function FavoritesHotels(hotels) {
+export default function FavoritesHotels(data) {
   // const getId = (state) => state.add;
   // const id = useSelector(getId);
   // console.log(id)
 
+  // const a = () => {
+  //   for (let i; i>hotels.len)
+  // }
+// console.log(data)
   return (
     <div className="FavoritesHotels">
       <div className="test">Компонент не реализован</div>

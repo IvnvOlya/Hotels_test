@@ -13,8 +13,6 @@ export function* handlLatestNews() {
   let dateNew = yield select(getDate);
   let day = yield select(getDay);
 
-  console.log(987654, dateNew);
-
   const { data } = yield call(getHotels, { city, dateNew, day });
   yield put(setHotels(data));
 }

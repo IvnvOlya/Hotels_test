@@ -6,7 +6,7 @@ import HotelItem from "../HotelItem/HotelItem";
 import CountFavorites from "../CountFavorites/CountFavorites";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {  getHotels } from "../../redux/actions/actionCreater";
+import { getHotels } from "../../redux/actions/actionCreater";
 
 export default function Hotels() {
   const newHotels = useSelector((store) => store?.hotels?.newHotels || []);
@@ -16,7 +16,13 @@ export default function Hotels() {
   const getCity = (state) => state.changeCity;
   const city = useSelector(getCity);
 
-  const today = new Date().toLocaleDateString()
+  let objDate = new Date();
+  let today =
+    objDate.toLocaleString("ru", { day: "numeric" }) +
+    " " +
+    objDate.toLocaleString("ru", { month: "long" }) +
+    " " +
+    objDate.toLocaleString("ru", { year: "numeric" });
 
   const handleNew = () => {
     dispatch(getHotels());
