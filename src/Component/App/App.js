@@ -2,7 +2,7 @@ import "./App.css";
 import Main from "../Main/Main";
 import ChooseHotels from "../ChooseHotels/ChooseHotels";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
