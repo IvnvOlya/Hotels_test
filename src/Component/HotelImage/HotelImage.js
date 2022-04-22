@@ -3,7 +3,7 @@ import "./HotelImage.css";
 export default function HotelImage({ hotels }) {
   return (
     <div>
-      <ul>
+      {/* <ul>
         <li>
           <img
             className="HotelImage_size"
@@ -11,7 +11,7 @@ export default function HotelImage({ hotels }) {
             alt=""
           />
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 }

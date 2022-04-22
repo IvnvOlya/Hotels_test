@@ -13,7 +13,7 @@ export default function FormSearch() {
 
   const handleNew = (e) => {
     e.preventDefault();
-    dispatch(getHotels());
+    dispatch(getHotels()); 
   };
 
   const handleDate = (e) => {

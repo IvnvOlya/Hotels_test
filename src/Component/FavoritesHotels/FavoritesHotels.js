@@ -12,7 +12,7 @@ export default function FavoritesHotels(data) {
 // console.log(data)
   return (
     <div className="FavoritesHotels">
-      <div className="test">Компонент не реализован</div>
+      <div className="test"></div>
       {/* <ul className="FavoritesHotels_list">
         <li className="FavoritesHotels_list_item">
           <h2 className="FavoritesHotels_list_item_head">{hotelName}</h2>

@@ -18,7 +18,7 @@ const HotelItem = ({ hotels }) => {
 
   const handleAdd = (e) => {
     e.preventDefault();
-    const t = e.target;
+    const t = e.target; 
     if (t.hasAttribute("data-key")) {
       dispatch(addFavorite(t.getAttribute("data-key")));
     }
