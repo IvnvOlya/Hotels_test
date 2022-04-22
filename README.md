@@ -1,6 +1,6 @@
 # web приложение для поиска отелей
 
-:tada: [Демо]()
+:tada: [Демо](https://hotels-test-d0ff.hostman.site/)
 
 :large_blue_circle: В приложении 2 страницы:
 - Страница авторизации (логин: test@mail.ru; пароль: 12345678)
