@@ -15,6 +15,7 @@ export default function Hotels() {
 
   const getCity = (state) => state.changeCity;
   const city = useSelector(getCity);
+  const resultCity = city.charAt(0).toUpperCase() + city.slice(1)
 
   let objDate = new Date();
   let today =
@@ -37,7 +38,7 @@ export default function Hotels() {
         <div>
           <h1 className="Hotels_heading">Отели</h1>
           <img className="Hotels_arrow" src={imageArrow} alt="" />
-          <h1 className="Hotels_heading">{city}</h1>
+          <h1 className="Hotels_heading">{resultCity}</h1>
         </div>
         <div className="Hotels_date">{today}</div>
       </div>
