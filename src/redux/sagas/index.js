@@ -8,7 +8,7 @@ const getDate = (state) => state.dateNow;
 const getDay = (state) => state.changeDays;
 
 //workerSaga
-export function* handlLatestNews() {
+export function* handlHotelsNews() {
   let city = yield select(getCity);
   let dateNew = yield select(getDate);
   let day = yield select(getDay);
@@ -18,7 +18,7 @@ export function* handlLatestNews() {
 }
 
 export function* watchClickSaga() {
-  yield takeEvery(GET_HOTELS, handlLatestNews);
+  yield takeEvery(GET_HOTELS, handlHotelsNews);
 }
 
 export default function* rootSaga() {

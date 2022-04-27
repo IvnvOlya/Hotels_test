@@ -1,34 +1,48 @@
 import "./FormSearch.css";
-import { getDate, getCity, getDays } from "../../redux/actions/actionCreater";
+import {
+  getDate,
+  getCity,
+  getDays,
+  getHotels,
+} from "../../redux/actions/actionCreater";
 
 import { useSelector, useDispatch } from "react-redux";
-import { getHotels } from "../../redux/actions/actionCreater";
+import { useState } from "react";
 
 export default function FormSearch() {
-  const date = useSelector((store) => store?.dateNow);
   const city = useSelector((store) => store?.changeCity);
+  const date = useSelector((store) => store?.dateNow);
   const days = useSelector((store) => store?.changeDays);
+
+  const [newCity, setNewCity] = useState(city);
+  const [bookingDates, setBookingDates] = useState(date);
+  const [newDays, setNewDays] = useState(days);
 
   const dispatch = useDispatch();
 
   const handleNew = (e) => {
     e.preventDefault();
-    dispatch(getHotels()); 
+    dispatch(getCity(newCity));
+    dispatch(getDays(newDays));
+    dispatch(getDate(bookingDates));
+    dispatch(getHotels());
   };
 
-  const handleDate = (e) => {
-    dispatch(getDate(e.target.value));
+  const handleChangeDate = (e) => {
+    setBookingDates(e.target.value);
   };
+
   const handleChangeCity = (e) => {
-    dispatch(getCity(e.target.value));
+    setNewCity(e.target.value);
   };
+
   const handleChangeDays = (e) => {
     if (e.keyCode !== 8 && e.keyCode !== 46) {
       let newValue = e.target.value.replace(/\D/g, "");
       newValue = newValue.replace(/(.{4})/g, "$1 ");
       e.target.value = newValue;
     }
-    dispatch(getDays(e.target.value));
+    setNewDays(e.target.value);
   };
 
   return (
@@ -42,7 +56,7 @@ export default function FormSearch() {
           className="Form_input FormSearch_input"
           type="location"
           name="location"
-          value={city}
+          value={newCity}
           required
         />
         <label className="Form_label Form_label_date" htmlFor="date">
@@ -52,8 +66,8 @@ export default function FormSearch() {
           className="Form_input FormSearch_input"
           type="date"
           name="date"
-          onChange={handleDate}
-          value={date}
+          onChange={handleChangeDate}
+          value={bookingDates}
           required
         />
         <label className="Form_label Form_label_days" htmlFor="days">
@@ -64,7 +78,7 @@ export default function FormSearch() {
           type="days"
           name="days"
           onChange={handleChangeDays}
-          value={days}
+          value={newDays}
           required
         />
         <button

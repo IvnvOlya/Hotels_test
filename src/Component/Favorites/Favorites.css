@@ -1,4 +1,4 @@
-/* .Favorites {
+.Favorites {
   box-sizing: border-box;
   width: 360px;
   padding: 32px;
@@ -10,33 +10,10 @@
 }
 
 .Favorites_heading {
-  padding-bottom: 36px;
+  padding-bottom: 15px;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   color: #424242;
 }
-
-.Favorites_btn {
-  box-sizing:border-box;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-
-  letter-spacing: -0.408px;
-
-  color: #41522e;
-  margin: 32px 0;
-  padding: 4px 8px;
-  background: #ffffff;
-  border: 1px solid #41522e;
-  box-sizing: border-box;
-  border-radius: 4px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 8px;
-} */

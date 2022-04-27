@@ -3,7 +3,6 @@ import dateNow from "./dateNow";
 import changeCity from "./changeCity";
 import changeDays from "./changeDays";
 import hotels from "./hotels";
-import countFavorite from "./countFavorite";
 import addFavorite from "./addFavorite";
 
 const reducer = combineReducers({
@@ -11,7 +10,6 @@ const reducer = combineReducers({
   changeCity,
   changeDays,
   hotels,
-  countFavorite,
   addFavorite,
 });
 

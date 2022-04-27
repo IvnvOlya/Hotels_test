@@ -11,7 +11,7 @@ export const getHotels = async (info) => {
   const currentMonth = date.getMonth() < 10 ? `0${+date.getMonth() + 1}` : +date.getMonth() + 1;
   const checkOut = `${date.getFullYear()}-${currentMonth}-${date.getDate()}`;
 
-  const apiURL = `http://engine.hotellook.com/api/v2/cache.json?location=${info.city}&currency=rub&checkIn=${info.dateNew}&checkOut=${checkOut}&limit=5`;
+  const apiURL = `https://engine.hotellook.com/api/v2/cache.json?location=${info.city}&currency=rub&checkIn=${info.dateNew}&checkOut=${checkOut}&limit=5`;
 
   const response = await axios.get(apiURL);
   return response;

@@ -8,10 +8,8 @@ export default function Favorites() {
 
   return (
     <div className="Favorites">
-      {/* <h1 className="Favorites_heading">Избранное</h1>
-      <button className="Favorites_btn">Рейтинг</button>
-      <button className="Favorites_btn">Цена</button>
-      <FavoritesHotels hotels={hotel} /> */}
+      <h1 className="Favorites_heading">Избранное</h1>
+      <FavoritesHotels hotels={hotel} />
     </div>
   );
 }

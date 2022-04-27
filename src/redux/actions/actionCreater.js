@@ -4,11 +4,8 @@ import {
   GET_HOTELS,
   SET_HOTELS,
   GET_DAYS,
-  COUNT_FAVORITE,
-  COUNT_MINUS,
   ADD_FAVORITE,
 } from "../constants";
-
 
 export const getDate = (payload) => ({
   type: GET_DATE,
@@ -32,13 +29,6 @@ export const getHotels = () => ({
 export const setHotels = (payload) => ({
   type: SET_HOTELS,
   payload,
-});
-
-export const countFavorite = () => ({
-  type: COUNT_FAVORITE,
-});
-export const countMinus = () => ({
-  type: COUNT_MINUS,
 });
 
 export const addFavorite = (payload) => ({

@@ -1,31 +1,11 @@
-.FavoritesHotels_list {
-}
-.FavoritesHotels_block_one,
-.FavoritesHotels_block_two {
+.FavoritesHotels_list_item{
   display: flex;
+  justify-content: space-between; 
 }
-.FavoritesHotels_block_one {
-  padding: 4px 0;
+.FavoritesHotels_list_item{
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(135, 135, 135, 0.2);
 }
-.FavoritesHotels_block_two {
-  justify-content: space-between;
-}
-.FavoritesHotels_list_item {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: -0.408px;
-  color: #878787;
-}
-.FavoritesHotels_list_item_head {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 22px;
-  letter-spacing: -0.408px;
-  color: #424242;
-}
-.test{
-  padding-top: 30px;
+.FavoritesHotels_svg{
+  fill: #ff2802;
 }
